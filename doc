@@ -1,0 +1,316 @@
+Requirements Engineering
+
+Requirements Classification
+•	Business Requirements — Statements of goals, objectives and outcomes that describe why a change has been initiated.
+•	Stakeholder Requirements — Describe the needs of stakeholders that must be met in order to achieve the business requirements. They must serve as a bridge between business and solution requirements.
+•	Transition Requirements — Define characteristics that a solution must have in order to transition from the current state to the desired future state. These are characteristics that will not be needed once the transition is completed.
+•	Solution Requirements — Describe the capabilities and qualities that meet the stakeholder requirements. They provide the appropriate level of detail to allow for the development and implementation of the solution. Solution requirements are divided into two types:
+–	Functional requirements — describe the capabilities that a solution must have in terms of the behavior and information that the solution will manage.
+–	Non-functional requirements — do not relate directly to the behavior or functionality of the solution, but rather describe conditions under which a solution must remain effective, or qualities that a solution must have.
+
+Note: this classification structure applies to a Complex IT service.
+Requirements Flow (Why → What → How)
+•	Business Requirements (WHY)
+•	Stakeholder Requirements (WHAT)
+•	Solution Requirements (HOW), which lead to Transition Requirements
+–	Solution Requirements split into: Functional Requirements and Non-functional Requirements
+Detailed Definitions (Extended)
+•	Business Requirements — high-level statements (goals) describing what is required from the business perspective — business problems or needs. Business requirements must provide an answer to the “why” questions. They apply at the organizational level and define the goals, objectives, and outcomes for a change that has been initiated.
+•	Stakeholder Requirements — more specific than business requirements but still not a solution. They define the needs of the various stakeholders and how they will interact with a solution.
+•	Transition Requirements — always temporary. This means that once the project is finished, they will no longer be valid. They are usually related to data conversion, business continuity, implementation processes, trainings, etc.
+•	Solution Requirements — describe the solution characteristics needed to meet the higher-level business and stakeholder requirements. They describe exactly how the solution will meet the stakeholder requirements.
+–	Functional Requirements — define the capabilities that a product must provide to its users. They exemplify the information and behavior that the solution will manage. They cover the features and functionality of the system, providing details about processes, data flows, actions, and how the user interacts with the system, and so on.
+–	Non-functional Requirements — quality-of-service requirements describing quality attributes, design and implementation constraints, and external interfaces that the product must have. They are not related precisely to the behavior and functionality of the solution, but rather to other qualities that the solution must have.
+Ownership Across Teams
+•	Commercial Team & Product Team gather and help define: Business Requirements, Stakeholder Requirements.
+•	Delivery Team defines: Solution Requirements, Functional Requirements, Non-Functional Requirements.
+
+3.1 Natural Language
+While defining requirements, it is often challenging to articulate certain phrases and statements in a way that is understandable to most stakeholders.
+Here, you have information on how specific requirements should be described in the form of Jira Backlog Items → Jira Issue Types 
+Familiarize yourself with the following materials on Natural Language and how to define requirement sentences to describe them in the clearest possible way for the majority of stakeholders.
+What is Natural Language?
+Natural language is a commonly applied way of specifying requirements. It can be used to document system requirement specifications as well as user requirements.
+It's handy to use natural language specification among certain groups of stakeholders who might not be comfortable with technical specification and overly technical language.
+Natural Language — Tips
+•	The simplest word that is appropriate to its intended purpose is the one to use — being too fancy complicates things and makes the resulting products hard to understand.
+•	Choose the correct imperative and use it consistently: a) “shall” prescribes; b) “will” describes; c) “must” and “must not” constrain; d) “should” suggests.
+•	Avoid weak phrases which are subject to different interpretations, such as: “as minimum”, “be able to”, “capable of” or “not limited to”.
+•	Avoid words that give a choice regarding the extent to which the requirement is to be satisfied, such as: “may”, “if required”, “as appropriate” or “if practical”.
+•	Avoid imprecise words that have relative meanings, such as: “easy”, “normal”, “adequate” or “effective”.
+•	Avoid generalities when numbers are required, such as “large”, “rapid”, “timely”, “most” or “close”.
+Natural Language — Aspect / Question / Keep-in-mind Table
+Aspect	What to ask yourself	Keep in mind
+Normalization of process words (converting a process into events)	Does the definition of a normalized term precisely depict the process (including exceptions as well as all inputs and outputs parameters)?
+Is it clear to all stakeholders?	If it's not clear, create another requirement or a glossary.
+Nouns with missing reference (incompletely specified)	Are all the What? Which? Where? questions answered?
+Bad example: “The data shall be displayed to the user.”	Be precise: specify which data, what message, which user, where to display the message, etc.
+Good example: “The system shall display the transaction history data to the registered user in the pop-up window.”
+Incompletely specified conditions	Did I cover all possible outcomes?
+Bad example: “The system should offer all products to users registered at least 2 years prior to January 2019.”	Specify not only positive conditions (what must happen when the condition is met) but also negative ones (what happens when the condition is not met) — decision tables can be a support.
+Good example: “The system shall offer: (1) all products without promotional terms to any user registered in January 2017 and later; (2) all products, including those with promotional terms, to any user registered before January 2017.”
+Incompletely specified process verbs	Did I provide all the necessary information? Are all words supplemented enough?
+Bad example: “To log a user in, the login data is entered.”	Use active voice instead of passive voice — it naturally creates the need to provide (at least some) supplementing information.
+Good example: “The system must allow the user to enter his username and password using the physical keyboard or screen keyboard.”
+
+How to Define Requirement
+Bring templates into play…
+1.	Determine the legal obligation:
+o	How legally binding is a requirement?
+2.	The requirement core:
+o	Determine the required process or functionality.
+3.	Characterize the Activity of a System:
+o	Autonomous system activity – The system performs the activity on its own (no user interaction).
+o	User interaction – The system provides a functionality to a user or directly interacts with a user (user is integrated into the requirement).
+o	Interface requirement – The system is passive and waits for an external event (e.g., message or data) to trigger it.
+4.	Insert objects:
+o	Complete process verbs by asking What? and Where?
+5.	Add conditions:
+o	Local – e.g., “if”
+o	Temporal – e.g., “as soon as”
+(Note: Be aware of their limitations. Don’t let them prevent you from expressing the needs.)
+ 
+
+
+
+
+Acceptance Criteria
+Definition:
+Acceptance Criteria define a minimal set of requirements and conditions that must be met for a Scrum Team to verify if a user story has been correctly delivered from a business perspective.
+These criteria help ensure that:
+•	Key stakeholders consider the solution acceptable.
+•	Consensus is reached between the Scrum Team and stakeholders.
+
+Key Characteristics of Good Acceptance Criteria:
+No.	Characteristic
+1	Defined and accepted early in the User Story life cycle, preferably before Sprint starts.
+2	Describe only what must be done, not the solution. Helps with memory and story goal focus.
+3	Independently testable – Must prove that the solution meets the requirements.
+4	Clear pass/fail result – Avoid complexity to reduce misunderstanding.
+5	Include both functional and non-functional criteria. Don't focus only on functional ones.
+6	Each user story should have at least one Acceptance Criterion written.
+
+Two Main Formats for Defining Acceptance Criteria (AC)
+1. Rule-Oriented → True/False Checklist (Boolean Statement)
+Description:
+Write simple, natural language statements that can be answered with Yes/No (pass/fail).
+Example: "After accepting the invoice, a success message is displayed."
+Example:
+User Story:
+As a user, I want to use a search field to type a city, name, or street, so that I can find matching hotel options.
+Acceptance Criteria (Boolean checklist):
+•	 The search field is placed on the top bar
+•	 Search starts once the user clicks “Search”
+•	 The field contains a placeholder with a grey-colored text: “Where are you going?”
+•	 The placeholder disappears once the user starts typing
+•	 Search is performed if a user types in a city, hotel name, street, or all combined
+•	 Search is in English, French, German, and Ukrainian
+•	 The user can’t type more than 200 symbols
+•	 The search doesn’t support special symbols (characters). If the user has typed a special symbol, show the warning message:
+“Search input cannot contain special symbols.”
+________________________________________
+2. Scenario-Oriented → Given/When/Then (Gherkin Method)
+Structure:
+•	GIVEN – Preconditions
+•	WHEN – Action performed
+•	THEN – Expected result
+This structure helps ensure consistency and provides clear context for testers when writing test cases or defining behaviors.
+Scenario Keywords Reference:
+•	Scenario – The name of the behavior being described
+•	Given – The initial state
+•	When – Specific user action
+•	Then – Outcome of the “When”
+•	And – To link additional conditions or results
+Example:
+User Story:
+As a communicator user, I want to upload my profile picture so that people in my organization can see my picture and know me better.
+Acceptance Criteria (Gherkin format):
+•	GIVEN user is logged in and is editing own profile
+WHEN user clicks on the update profile picture
+THEN user can upload and save new picture which will be visible immediately in profile
+•	GIVEN user is logged in and is editing own profile
+WHEN user clicks on the update profile picture
+THEN user can delete his picture and leave the profile without a picture
+
+How estimation in Story Points (SP) could look like
+While Estimating our User Stories (US) we do not use standard hours or days that are connected only with
+physical time. The switch to Story Points (SP) offers number of advantages:
+•	Story point consist of multiple factors. Basic rule is that more of each of any below factor, the higher
+estimation it should be. Factors that influence SP:
+time needed to deliver functionality
+unpredictability of delivery (i.e. we do not know how the solution will react with existing
+solution)
+possible external engagement (if such engagement is huge part of our User Story we should
+not plan it to the sprint until solving this dependency)
+complexity (the more complex solution is , the more unpredictable things can influence our
+development)
+Story Point is based on Fibonacci sequence (numbers)
+General rule is that every next number is the sum of 2 previous ones (for example: 1; 1+1=2;
+1+2=3; 2+3=5; etc)
+ because of greater difference between next numbers it is easier to mark difference between
+estimation
+1 Fibonacci sequence (numbers)
+Implementation should be going under some basic rules shared by all teams:
+we are not estimating higher than 13 story points ( bigger issue must be decomposed to
+smaller ones)
+Whenever we have estimation for at least 8SP we should deeply think through if there are
+some dependencies and there is possible to deliver this in this value.
+We can start implementation of SP by comparing first to real time, and than adding more if
+needed in case of big complexity, unpredictability etc:
+We should always try to use Planning poker (via Slack extension “pokerPlanner”) to not influence our
+decisions.
+Than we are discussing reasons for highest and lowest estimation and making common decision of
+developers what estimation are we taking
+if it is only possible, we should compare one US to another - when we have one issue estimated, we
+can compare if next one is bigger or smaller and speed up estimation based on this (this solution
+should not be used when the scope of User Story is required to be discussed - i.e. it is complex
+
+
+1.	DoR - Definition of Ready
+3.4.1 Definition of Ready
+•	Description is clear and understood by the Team
+•	Acceptance Criteria are clear, agreed with Product Owner and written in accordance with good
+•	practice
+•	Dependencies identifies and documented and linked ( Confluence/Jira Link/Attachment)
+•	Constraints and NFRs (quality attributes) are outlined
+•	Estimated in Story Points/Hours
+•	Sequence of steps to do is defined in Jira in form of sub-task (if Story Points = 8 or 13)
+•	Testing procedure agreed
+*If DoR not met, then user story should not be switched to TO DO
+
+
+2.	Requirements Review
+•	During refinements, teams should ask the following questions for each requirement to ensure
+•	they have gathered enough information to deliver the requirement according to the business
+•	needs and assumptions.
+
+To Make an Effective Requirements Review
+Check if requirements are:
+•	Understandable
+•	Clear & Unambiguous
+•	Necessary
+•	Consistent
+•	Verifiable / Testable
+•	Feasible
+•	Traceable
+•	Complete
+Ask supportive questions:
+•	Are you able to describe what is the scope of a particular requirement?
+•	What are the preconditions for this requirement?
+•	What are the inputs for this requirement? (What is the source of inputs?)
+•	What dependencies has this requirement? (Internal / external)
+•	What are the outputs for this requirement?
+•	Do you know how this requirement should be tested?
+•	What are the business outcomes to be achieved from this requirement?
+
+5.2.3 Taks decomposition approach
+1. Start with Clear User Stories
+Begin with well-defined user stories. Each story should meet the INVEST criteria: Independent,
+Negotiable, Valuable, Estimable, Small, and Testable.
+Stories should represent deliverable functionality from an end-user perspective.
+all stories should have clearly defined Acceptance criteria so the team knows what they are asked to
+deliver.
+Acceptance criteria should be written using Gherkin: “As a [user], I want [feature], so that [benefit]."
+
+To Make an Effective Requirements Review
+Check if Requirements Are:
+•	Understandable
+•	Clear & Unambiguous
+•	Necessary
+•	Consistent
+•	Verifiable / Testable
+•	Feasible
+•	Traceable
+•	Complete
+
+Ask Supportive Questions:
+•	Are you able to describe what is the scope of a particular requirement?
+•	What are the preconditions for this requirement?
+•	What are the inputs for this requirement? (What is the source of inputs?)
+•	What dependencies does this requirement have? (Internal / External)
+•	What are the outputs for this requirement?
+•	Do you know how this requirement should be tested?
+•	What are the business outcomes to be achieved from this requirement?
+
+2. Break Down User Stories into Smaller subTasks
+Decompose each user story into smaller, actionable subTasks that can be completed in a day or less.
+Focus on concrete, specific subsubTasks that contribute directly to the story's goal. For example:
+Frontend implementation.
+Backend logic or APIs.
+Writing unit tests or integration tests.
+Documentation or compliance checks.
+Dividing work into clear steps would make it easier to understand how we can divide it into doable,
+separate parts.
+3. Identify Dependencies Early
+Map out dependencies between subTasks and account for them in sprint planning. This reduces
+bottlenecks during execution.
+4. Keep subTasks Team-Oriented, Not Individual-Centric
+subTasks should focus on outcomes rather than who will execute them. For instance, use phrases
+like "Create login form" instead of "Janusz will build login form."
+5. Maintain Vertical Slicing
+Decompose subTasks to reflect end-to-end deliverables rather than horizontal layers (e.g., avoid
+"create all database schemas" as a subTask).
+6. Ensure Definition of Done (DoD) Alignment
+Each subTask should contribute to achieving the user story’s DoD. What is agreed as part of DoD
+should not be separate subtask. For example:
+Code written and peer-reviewed.
+Test cases implemented and passed.
+Documentation updated.
+7. Engage the Team
+Decompose subTasks collaboratively during backlog refinement or sprint planning sessions to
+leverage collective insights.
+5.2.3.1 Example subTask Decomposition
+User Story: "As a user, I want to reset my password so that I can regain access to my account."
+subTasks:
+Design the "Forgot Password" UI.
+Create backend API for password reset functionality.
+Integrate frontend with backend API.
+Add email notifications for password reset.
+Write unit and integration tests for password reset flow.
+Update user documentation for password reset feature.
+5.2.3.2 Benefits of Effective Decomposition
+Improves sprint predictability.
+Facilitates better collaboration and ownership.
+Reduces subTask blockers and accelerates progress.
+Enhances transparency for stakeholders.
+5.2.4 Capacity of a team
+Current team capacity calculation is basic average of 5 consecutive previous sprints Story points delivered.
+We are presenting team Capacity in iteration reports18, and we are using there following metrics:
+Average Team Capacity (based on last 5 sprint average delivery): (49+40+54+33+27)/5= 41 SP
+Planned Story points in sprint (committed): [56 SP]
+Delivered Story Points: [31 SP]
+Summary of Delivered Scope: [List of delivered functionalities and subTasks or Jira sprint report widget]
+5.2.5 Task spillover approach
+5.2.5.1 How spillover can be approached?
+Do not plan Beyond Capacity Failing to account for the team’s capacity and velocity during sprint
+planning often causes spillovers. The PDM should guide the team in understanding the significance
+of aligning forecasted work with capacity, preventing overcommitment.
+Allocate Space for Unplanned Work In dynamic environments, unplanned work like change requests
+or production issues is inevitable. Avoid planning the sprint to full capacity—reserve time for
+unexpected tasks based on historical patterns. If there’s extra time, the team can pull additional work
+mid-sprint.
+Embrace team Collaboration When team members choose tasks based solely on individual skills,
+teamwork suffers, and daily Scrum becomes ineffective. Encourage collaboration by assigning tasks
+that multiple members can work on together. Prioritize larger, high-value stories over small, low-value
+ones.
+Define Definition of Done A weak or absent definition of done hinders transparency and allows
+changes to disrupt the sprint. Strengthen the definition of done to ensure the team delivers highquality,
+potentially releasable product increments during the sprint.
+Finish undone work first (do not accumulate) Tasks like UAT, performance testing, or security checks
+often spill into subsequent sprints. Address this by refining the definition of done to include these
+tasks and completing all necessary work within the sprint.
+Effective Backlog Refinement An unrefined product backlog leads to unclear sprint plans. Hold
+regular backlog refinement sessions to prepare 1–2 sprints worth of work in advance, reducing
+ambiguity and improving planning outcomes.
+Sprint Backlog Updates Failing to update the sprint backlog when task statuses change undermines
+transparency and delays support. Establish a team agreement to maintain an up-to-date sprint
+backlog that reflects the current state of work.
+Managing Inter-Team Dependencies between teams in multi-team Scrum setups
+often cause delays. Create team dependancies matrix in Jira Plans to manage all dependancies
+(program board alike)
+External cooperation Cooperation with AM/other delivery teams/design team etc. often delay
+decision-making by acting as intermediaries. This leads to inefficiencies and communication gaps.
+Eliminate undefined tasks from sprint planning
+Lack of Empiricism Teams that fail to learn from previous sprints miss opportunities for
+improvement. Make retrospectives constructive and focused on identifying actionable insights. Use
+these insights to iteratively improve delivery processes and product outcomes

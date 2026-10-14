@@ -1,0 +1,192 @@
+1. Full version — OKR framework and workshop plan
+I recommend combining OKRs (Objectives & Key Results), initiative planning, and Definition of Ready. The most important principle is to follow the right sequence: first agree on what business outcome you want to achieve and why, then define the initiatives, requirements, and tasks.
+I would not start the workshop with a list of tasks. This often leads to a plan of activities rather than a plan for delivering value.
+1. How to define Objectives and Key Results
+Element	What should it define?	Example
+Objective	What meaningful state do we want to achieve, and why?	Simplify the business customer service process.
+Key Result (KR)	How will we know that we have achieved the objective?	Reduce the median service time from 5 days to 2 days.
+Initiative	What action could help us achieve the KR?	Automate the handling of the most common requests.
+Task	What specific work needs to be done?	Map the process and identify requests suitable for automation.
+Three principles:
+- An Objective describes the desired outcome, not a technical solution or a list of tasks.
+- Key Results measure a change or impact, not simply whether work has been completed.
+- Initiatives are hypotheses about how to achieve the results. They should be prioritized and validated.
+At the annual level, define the direction and measurable outcomes. Develop detailed requirements and tasks iteratively as you gain a better understanding of the problem.
+2. Annual OKR planning workshop outline
+I recommend running the process in two workshop sessions, with some preparation beforehand and validation afterward. This prevents the team from having to define the strategy, come up with solutions, and refine requirements simultaneously.
+
+Session 1 — Strategic Alignment & OKR Definition
+2.5–3 hours
+Establish a shared understanding of business direction, problems, priorities, Objectives, and Key Results.
+
+
+
+
+Session 2 — Initiative Discovery & Readiness
+3–4 hours
+Translate OKRs into initiatives, business value, requirements, acceptance criteria, dependencies, and Definition of Ready.
+
+
+
+Session 1. Strategic Alignment & OKR Definition
+Stage	Duration	Expected outcome
+1. Business context	20 min	Understanding of strategy, constraints, and business expectations
+2. Problem discovery	35 min	List of the most important problems and opportunities
+3. Prioritization	25 min	Priorities selected based on value, impact, and urgency
+4. Objective formulation	35 min	Initial Objectives describing the desired state
+5. Key Results definition	40 min	Measurable outcomes, baselines, and target values
+6. Alignment & voting	20 min	Agreement on a shared set of OKRs
+Questions to ask the team:
+- What business problem are we solving?
+- Why is it important next year?
+- What will be different if we succeed?
+- How will we measure that change?
+- What other priorities or dependencies could prevent us from succeeding?
+The output should be approximately 2–4 Objectives for the team, each with 2–4 specific Key Results. This is a starting point, not a rigid rule. The appropriate number depends on the team's scope and responsibilities.
+Session 2. Initiative Discovery & Readiness
+Once the OKRs have been agreed upon, move on to initiatives. Every initiative should have a business justification and a clear connection to at least one KR.
+Stage	Duration	Expected outcome
+1. Initiative discovery	40 min	List of potential initiatives
+2. Value & impact assessment	35 min	Assessment of value, cost, risk, and impact
+3. Initiative breakdown	40 min	Scope, key requirements, and dependencies
+4. Requirements & acceptance criteria	45 min	Verifiable conditions for delivery
+5. Definition of Ready	30 min	Initiative readiness assessment
+6. Roadmap & ownership	30 min	Priorities, accountability, and next steps
+By the end, every initiative should have an owner, priority, business justification, and clearly defined next step. You do not need to break down every task for the entire year during the workshop.
+3. Definition of Ready — proposed standard
+I would introduce three levels of readiness, because an Objective, an initiative, and an individual task require different information.
+A. Objective Ready
+An Objective is ready for approval when:
+- [ ] It aligns with the business strategy and priorities.
+- [ ] It describes a desired outcome rather than a solution.
+- [ ] The team understands the problem, the audience, and the rationale (why).
+- [ ] An owner and scope of responsibility have been identified.
+- [ ] The associated Key Results have metrics, baselines, and target values, where available.
+- [ ] Significant constraints and dependencies have been identified.
+B. Initiative Ready
+This is the most important level for annual planning and initiative portfolio management.
+- [ ] Objective & KR linkage — the team knows which result the initiative supports.
+- [ ] Problem statement & Why — the problem, its cause, and its significance are documented.
+- [ ] Business value — the expected benefit and how it will be validated are defined.
+- [ ] Scope — the scope, exclusions, and key assumptions are established.
+- [ ] Requirements — requirements are clear and verifiable.
+- [ ] Acceptance criteria — conditions for accepting the outcome are defined.
+- [ ] Dependencies & risks — key dependencies and risks are identified.
+- [ ] Ownership & capacity — an accountable owner is assigned and resource availability is assessed at a high level.
+- [ ] Success measurement — the team knows how to measure the value delivered.
+Not every detail needs to be known at the beginning. Requirements should be refined in proportion to the risk, cost, and proximity to implementation.
+C. Task Ready
+An individual task should meet the following conditions:
+- [ ] It has a clear objective and business or technical context.
+- [ ] It has a specific, understandable outcome.
+- [ ] It includes requirements and acceptance criteria appropriate to the type of work.
+- [ ] The effort is estimated and dependencies are known.
+- [ ] It is small enough for the team to complete and verify within its established work cycle.
+An important distinction: not every technical task requires a detailed business case. However, it should have a clear rationale linked to an initiative, requirement, quality, security, or system maintenance.
+4. Initiative template for the team
+You can use the following template as a standard in Jira, Confluence, or your roadmap management tool.
+Initiative Canvas
+One card for each initiative
+1. Initiative name
+
+2. Objective & strategic alignment
+
+3. Problem statement & Why
+
+4. Expected business value
+
+5. Related Key Result
+
+6. Scope & boundaries
+
+7. Requirements
+
+8. Acceptance criteria
+
+9. Risks & dependencies
+
+10. Initiative owner
+
+ Copy completed template
+5. How to define business value and acceptance criteria
+These two elements should be kept separate.
+- Business value: why the initiative is justified and what benefit we expect.
+- Acceptance criteria: what conditions the delivered outcome must meet to be accepted.
+Example:
+EXAMPLE
+Initiative: Automate the handling of repetitive requests.
+Why: The support team spends a significant amount of time on repetitive activities, which increases customer response times.
+Business value: Reduce the effort required to process requests and shorten response times. The target value should be established using baseline data.
+Key Result: Reduce median service time from 5 days to 2 days.
+Requirements:
+- The system identifies the agreed request categories.
+- Automated handling is limited to cases that meet specified conditions.
+- Unrecognized requests are routed for manual handling.
+Acceptance criteria:
+- All agreed scenarios pass acceptance testing.
+- Requests outside the automation scope are routed to the appropriate queue.
+- The impact of the automation can be measured and compared with the baseline period.
+
+Note that implementing automation alone does not prove that the Key Result has been achieved. You need to measure the impact after implementation.
+6. What should the process produce?
+By the end of the planning process, you should have five concrete outcomes:
+1. Approved OKRs — agreed Objectives and measurable Key Results.
+2. Prioritized initiative portfolio — a list of initiatives with business justification and links to OKRs.
+3. Definition of Ready — agreed readiness criteria for Objectives, initiatives, and tasks.
+4. Initiative owners & roadmap — accountability, dependencies, and a preliminary timeline.
+5. Governance & review cadence — regular reviews of KR progress, risks, and whether the initiatives remain justified.
+My recommendation: treat OKRs as the mechanism for defining why and what outcome we want to achieve, and the backlog and Definition of Ready as the mechanism for defining what needs to be prepared before implementation can begin. This connects strategy, business value, and the team's day-to-day work without requiring every task for the entire year to be planned in detail.
+
+2. Short version — 4-minute OKR theory and principles workshop
+The workshop should last a maximum of 4 minutes and focus exclusively on explaining the theory, principles, and standards for defining OKRs. The actual work on Objectives, Key Results, and initiatives will take place later.
+Workshop outline — OKRs & Definition of Ready
+4 minutes
+
+Theory & principles
+
+
+0:00
+45 sec
+
+1. Why do we need OKRs?
+We establish a shared direction for the coming year. OKRs should define the desired business outcomes, not just a list of tasks to complete.
+
+
+0:45
+60 sec
+
+2. Objectives, Key Results, and Initiatives
+- Objective: What do we want to achieve, and why?
+- Key Results: How will we know that we have achieved it?
+- Initiatives: What will we do to influence the results?
+- Tasks: What specific work will we carry out as part of the initiatives?
+
+
+1:45
+75 sec
+
+3. Principles for defining OKRs
+- Every objective must have a business rationale (why).
+- Key Results must be measurable and describe outcomes, not activities.
+- Initiatives must be linked to a specific KR.
+- Priorities are agreed collectively, considering value, impact, and constraints.
+
+
+3:00
+60 sec
+
+4. Definition of Ready — our shared standard
+Before implementation begins, every initiative should have:
+- A clearly defined objective and rationale (why).
+- Expected business value.
+- A link to an Objective and KR.
+- A defined scope and requirements.
+- Verifiable acceptance criteria.
+- Identified dependencies, risks, and ownership.
+
+
+
+The key principle to communicate to the team
+We do not start with what we want to do. We start with the problem we want to solve, why it matters, and how we will know that we have succeeded.
+After these four minutes, the team should understand the shared terminology, the principles for defining OKRs, and the minimum readiness standard for initiatives.
+Only then should you begin the actual exploration and OKR definition sessions.
